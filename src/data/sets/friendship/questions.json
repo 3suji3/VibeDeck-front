@@ -1,0 +1,29 @@
+[
+  {
+    "id": "f1",
+    "text": "친구가 힘들어할 때 당신은?",
+    "category": "support",
+    "options": [
+      {
+        "id": "f1_1",
+        "text": "바로 달려가서 위로해준다",
+        "traits": { "supportive": 3, "empathetic": 2 }
+      },
+      {
+        "id": "f1_2",
+        "text": "실용적인 해결책을 제시한다",
+        "traits": { "practical": 3, "helpful": 2 }
+      },
+      {
+        "id": "f1_3",
+        "text": "조용히 곁에서 들어준다",
+        "traits": { "listener": 3, "calm": 2 }
+      },
+      {
+        "id": "f1_4",
+        "text": "재미있는 일로 기분을 전환시켜준다",
+        "traits": { "cheerful": 3, "positive": 2 }
+      }
+    ]
+  }
+]

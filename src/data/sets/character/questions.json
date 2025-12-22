@@ -1,0 +1,29 @@
+[
+  {
+    "id": "c1",
+    "text": "파티에서 당신의 모습은?",
+    "category": "social_behavior",
+    "options": [
+      {
+        "id": "c1_1",
+        "text": "많은 사람들과 활발하게 대화한다",
+        "traits": { "extrovert": 3, "energetic": 2 }
+      },
+      {
+        "id": "c1_2",
+        "text": "친한 몇 명과 깊은 대화를 나눈다",
+        "traits": { "introvert": 2, "deep": 3 }
+      },
+      {
+        "id": "c1_3",
+        "text": "분위기를 관찰하며 적절히 참여한다",
+        "traits": { "observer": 3, "adaptive": 2 }
+      },
+      {
+        "id": "c1_4",
+        "text": "조용한 곳에서 휴식을 취한다",
+        "traits": { "introvert": 3, "peaceful": 2 }
+      }
+    ]
+  }
+]

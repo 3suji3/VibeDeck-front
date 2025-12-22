@@ -1,0 +1,29 @@
+[
+  {
+    "id": "l1",
+    "text": "연인과 데이트할 때 당신은?",
+    "category": "dating",
+    "options": [
+      {
+        "id": "l1_1",
+        "text": "미리 계획을 세워서 완벽한 데이트를 준비한다",
+        "traits": { "planning": 3, "caring": 2 }
+      },
+      {
+        "id": "l1_2",
+        "text": "그때그때 분위기에 맞춰 즉흥적으로 즐긴다",
+        "traits": { "spontaneous": 3, "playful": 2 }
+      },
+      {
+        "id": "l1_3",
+        "text": "연인이 좋아할 만한 것을 우선 생각한다",
+        "traits": { "caring": 3, "empathy": 1 }
+      },
+      {
+        "id": "l1_4",
+        "text": "둘 다 편안하게 즐길 수 있는 것을 선택한다",
+        "traits": { "balance": 2, "harmony": 2 }
+      }
+    ]
+  }
+]

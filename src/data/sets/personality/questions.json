@@ -1,0 +1,56 @@
+[
+  {
+    "id": "q1",
+    "text": "새로운 사람들과 만날 때 당신은?",
+    "category": "social",
+    "options": [
+      {
+        "id": "q1_1",
+        "text": "먼저 다가가서 대화를 시작한다",
+        "traits": { "social": 3, "emotion": 1 }
+      },
+      {
+        "id": "q1_2", 
+        "text": "상대방이 먼저 말을 걸기를 기다린다",
+        "traits": { "stability": 2, "logic": 1 }
+      },
+      {
+        "id": "q1_3",
+        "text": "자연스럽게 대화에 참여한다",
+        "traits": { "social": 2, "creativity": 1 }
+      },
+      {
+        "id": "q1_4",
+        "text": "조용히 관찰하며 분위기를 파악한다",
+        "traits": { "logic": 2, "stability": 1 }
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "text": "계획을 세울 때 당신은?",
+    "category": "planning",
+    "options": [
+      {
+        "id": "q2_1",
+        "text": "세밀하게 모든 것을 준비한다",
+        "traits": { "stability": 3, "logic": 2 }
+      },
+      {
+        "id": "q2_2",
+        "text": "큰 틀만 정하고 즉흥적으로 진행한다",
+        "traits": { "creativity": 3, "emotion": 1 }
+      },
+      {
+        "id": "q2_3",
+        "text": "상황에 따라 유연하게 조정한다",
+        "traits": { "social": 1, "logic": 1, "stability": 1 }
+      },
+      {
+        "id": "q2_4",
+        "text": "직감을 믿고 흐름에 맡긴다",
+        "traits": { "emotion": 2, "creativity": 2 }
+      }
+    ]
+  }
+]

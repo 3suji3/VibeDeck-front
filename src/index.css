@@ -31,15 +31,7 @@
   }
 
   /* Custom cursor for desktop only */
-  @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
-    body {
-      cursor: none;
-    }
-    
-    button, a, [role="button"], .cursor-pointer, input, textarea, select {
-      cursor: none !important;
-    }
-  }
+  /* 커스텀 커서와 기본 포인터를 동시에 보이게: cursor: none 제거 */
 
   @keyframes dreamyGradient {
     0%, 100% { background-position: 0% 50%; }

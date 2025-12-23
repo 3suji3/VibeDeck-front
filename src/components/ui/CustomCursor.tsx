@@ -51,50 +51,46 @@ export default function CustomCursor() {
   return (
     <>
       {/* Main cursor dot (더 큼, glow, 클릭 위치 강조) */}
-      <motion.div
-        className="fixed top-0 left-0 w-5 h-5 bg-gradient-to-br from-pink-400 via-purple-400 to-blue-400 rounded-full pointer-events-none z-[9999] shadow-[0_0_16px_4px_rgba(236,72,153,0.25)]"
-        style={{
-          mixBlendMode: 'exclusion',
-          boxShadow: isHovering
-            ? '0 0 32px 8px rgba(139,92,246,0.25), 0 0 0 6px rgba(236,72,153,0.10)'
-            : '0 0 16px 4px rgba(236,72,153,0.18)'
-        }}
-        animate={{
-          x: mousePosition.x - 10,
-          y: mousePosition.y - 10,
-          scale: isHovering ? 1.35 : 1,
-          opacity: 1
-        }}
-        transition={{
-          type: "spring",
-          stiffness: 400,
-          damping: 30,
-          mass: 0.6
-        }}
-      />
+        <motion.div
+          className="fixed top-0 left-0 w-3 h-3 bg-gradient-to-br from-pink-400 via-purple-400 to-blue-400 rounded-full pointer-events-none z-[9999] shadow-[0_0_8px_2px_rgba(236,72,153,0.18)]"
+          style={{
+            mixBlendMode: 'difference',
+            opacity: 0.8
+          }}
+          animate={{
+            x: mousePosition.x - 6,
+            y: mousePosition.y - 6,
+            scale: isHovering ? 1.2 : 1,
+            opacity: 0.8
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 400,
+            damping: 30,
+            mass: 0.6
+          }}
+        />
 
       {/* Outer dreamy ring (hover시 glow, 클릭영역 강조) */}
-      <motion.div
-        className="fixed top-0 left-0 w-14 h-14 border-2 border-pink-300/60 rounded-full pointer-events-none z-[9998]"
-        style={{
-          mixBlendMode: 'exclusion',
-          boxShadow: isHovering
-            ? '0 0 32px 8px rgba(139,92,246,0.18), 0 0 0 8px rgba(236,72,153,0.10)'
-            : '0 0 12px 2px rgba(139,92,246,0.10)'
-        }}
-        animate={{
-          x: mousePosition.x - 28,
-          y: mousePosition.y - 28,
-          scale: isHovering ? 1.5 : 1,
-          opacity: isHovering ? 0.7 : 0.45
-        }}
-        transition={{
-          type: "spring",
-          stiffness: 120,
-          damping: 18,
-          mass: 0.9
-        }}
-      />
+        <motion.div
+          className="fixed top-0 left-0 w-8 h-8 border-2 border-pink-200/60 rounded-full pointer-events-none z-[9998]"
+          style={{
+            mixBlendMode: 'difference',
+            opacity: 0.5
+          }}
+          animate={{
+            x: mousePosition.x - 16,
+            y: mousePosition.y - 16,
+            scale: isHovering ? 1.25 : 1,
+            opacity: isHovering ? 0.6 : 0.5
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 120,
+            damping: 18,
+            mass: 0.9
+          }}
+        />
     </>
   )
 }

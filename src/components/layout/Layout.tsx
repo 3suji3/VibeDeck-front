@@ -7,7 +7,7 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="min-h-screen relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden overflow-x-hidden w-full max-w-full">
       <CustomCursor />
       
       {/* Decorative background elements */}

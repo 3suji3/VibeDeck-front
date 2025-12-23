@@ -57,9 +57,19 @@ export default function QuestionCard({ question, selectedOption, onOptionSelect 
                   />
                 )}
               </div>
-              <span className={`text-lg ${
-                selectedOption === option.id ? 'text-purple-700 font-medium' : 'text-gray-700'
-              }`}>
+              <span
+                className={`text-lg ${
+                  selectedOption === option.id ? 'text-purple-700 font-medium' : 'text-gray-700'
+                } break-words whitespace-pre-line max-w-full sm:max-w-[80vw] md:max-w-[40vw] overflow-hidden text-ellipsis`}
+                style={{
+                  wordBreak: 'break-word',
+                  overflowWrap: 'break-word',
+                  lineHeight: '1.5',
+                  minWidth: 0,
+                  maxWidth: '100%',
+                  display: 'block'
+                }}
+              >
                 {option.text}
               </span>
             </div>

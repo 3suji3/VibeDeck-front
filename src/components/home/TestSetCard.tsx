@@ -76,21 +76,21 @@ export default function TestSetCard({
 
         {/* Content */}
         <div className="p-6 space-y-4">
-          <p className="text-body leading-relaxed line-clamp-3">
+          <p className="text-body leading-relaxed line-clamp-3 break-words max-w-full overflow-hidden">
             {description}
           </p>
-          
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 min-w-0 max-w-full">
             {tags.map((tag, index) => (
               <motion.span
                 key={tag}
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: delay + 0.1 + index * 0.05 }}
-                className="px-3 py-1.5 bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 text-xs font-medium rounded-full border border-purple-200/50"
+                className="px-3 py-1.5 bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 text-xs font-medium rounded-full border border-purple-200/50 break-words max-w-full min-w-0 overflow-hidden"
+                style={{ wordBreak: 'break-word', overflowWrap: 'break-word', maxWidth: '100%', minWidth: 0, display: 'block' }}
               >
                 {tag}
-              </span>
+              </motion.span>
             ))}
           </div>
         </div>
